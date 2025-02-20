@@ -62,7 +62,7 @@ const Pagemove: React.FC<IProps> = ({
     return (
     <HTMLFlipBook
       className={className ?? "demoBook"}
-      style={style ?? {margin: "0", padding: "0", overflow: "hidden", backgroundColor: "red"}}
+      style={style ?? { width: "100%", height: "100%" }}
       width={width}
       height={height}
       startPage={startPage ?? 0}
@@ -86,10 +86,6 @@ const Pagemove: React.FC<IProps> = ({
       disableFlipByClick={disableFlipByClick ?? false}
     >
       {children}
-      {/* <div className="demoPage">Page 1</div>
-      <div className="demoPage">Page 2</div>
-      <div className="demoPage">Page 3</div>
-      <div className="demoPage">Page 4</div> */}
     </HTMLFlipBook>
   );
 };

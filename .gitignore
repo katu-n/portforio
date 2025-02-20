@@ -10,4 +10,3 @@ webpack.config.js
 tsconfig.json
 eslint.config.js
 .DS_Store
-.gitignore
