@@ -1,15 +1,19 @@
 import React from "react";
 import { Heading } from "../system/Hedding";
 import { Nav } from "../component/page-parts/nav";
-import { Global } from "@emotion/react";
-import { Surround } from "../system/Surroud";
+import { ClassNames, Global } from "@emotion/react";
 
 export const Main = () => {
   return (
     <>
-        <Global styles={Surround}/>
-      <Heading level="h1">TOPpage</Heading>
-      <Nav />
+      <header className="bg-main">
+        <div className="mx-10 py-5">
+          <div className="text-4xl flex justify-between items-center">
+            <div>Katu's Portfolio</div>
+            <Nav />
+          </div>
+        </div>
+      </header>
     </>
   );
 };

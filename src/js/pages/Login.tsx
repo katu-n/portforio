@@ -3,6 +3,7 @@ import FollowingMouseEvent from "../component/mouse";
 import { ThreadLink } from "../system/Linkstyle";
 import { Global } from "@emotion/react";
 import { Surround } from "../system/Surroud";
+import { ToggleButton } from "../component/page-parts/ToggleButton";
 
 export const Login = () => {
   return (
@@ -17,6 +18,7 @@ export const Login = () => {
       </ThreadLink>
             </div>
         </div>
+        <ToggleButton/>
       <FollowingMouseEvent />
       <Global styles={Surround} />
     </>
